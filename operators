@@ -1,0 +1,92 @@
+Program1:-
+# To find sum and difference between two numbers
+n1 = int(input())
+n2 = int(input())
+print(n1+n2)
+print(n1-n2)
+
+Program2:-
+#Product and division between 2 numbers
+n1 = int(input())
+n2 = int(input())
+print(n1*n2)
+print(n1//n2)
+print(n1%n2)
+
+Program3:-
+Swapping of 2 numbers
+a= int(input())
+b=int(input())
+a,b=b,a
+print(a)
+print(b)
+
+Program4:-
+#Average of  5 numbers
+a= float(input())
+b=float(input())
+c=float(input())
+d=float(input())
+e=float(input())
+av = (a+b+c+d+e)/5
+print("%.2f"%av)
+
+Program5:-
+#area calculation
+s = int(input("Side of square: "))
+l =int(input("length of rectangle: "))
+b = int(input("breadth of rectange: "))
+r = float(input("radius of circle:"))
+print("Area of square: ",s*s)
+print("Area of rectangle: ",l*b)
+print("Area of circle: %.2f"%(3.14*r*r))
+
+Program6:-
+The college ground is rectangular in shape. The Management decides to build a fence around the ground. In order to help the construction workers to build a straight fence, 
+they planned to place a thick rope around the ground. They wanted to buy only the exact length of the rope that is needed.
+They also wanted to cover the entire ground with a thick carpet during rainy season. They wanted to buy only the exact quantity of carpet that is needed. 
+They requested your help. Can you please help them by writing a program to find the exact length of the rope and the exact quantity of carper that is required? 
+l = int(input())
+b = int(input())
+print("Required length is",(2*(l+b)),"m")
+print("Required quantity of carpet is",l*b,"sqm")
+
+Program7:-
+#power of a number
+a = int(input())
+b=int(input())
+print(pow(a,b))
+
+Program8:-
+#Simple interest
+p=int(input("Enter principle: "))
+y = int(input("time period:"))
+r =float(input("rate of interest"))
+s = p*y*r/100
+print("%.2f"%s)
+
+Program9:-
+# During the Physical Education hour, PET sir has decided to conduct some team games. He wants to split the students in the class into equal sized teams. 
+# In some cases, there may be some students who are left out from teams and he wanted to use the left out students to assist him in conducting the team games. 
+# For instance, if there are 50 students in the class and if the class has to be divided into 7 equal sized teams, 7 students will be there in each team and
+# 1 student will be left out. PET sir asks your help to automate this team splitting task. Can you please help him out? 
+
+nos = int(input())
+nt = int(input())
+print(f"The number of students in each team is {nos//nt} and left out is {nos%nt}")
+
+Program10:-
+# Ajay, Binoy and Chandru were very close friends at school. They were very good in Mathematics and they were the pet students of Emily Mam.
+# Their gang was known as 3-idiots. Ajay, Binoy and Chandru live in the same locality. A new student Dinesh joins their class and he wanted to be friends with them.
+# He asked Binoy about his house address. Binoy wanted to test Dinesh's mathematical skills. Binoy told Dinesh that his house is at the midpoint of the line joining Ajay's house
+# and Chandru's house. Dinesh was puzzled. Can you help Dinesh out? Given the coordinates of the 2 end points of a line (x1,y1) and (x2,y2), write a python program to find the midpoint of the line. 
+x1 = float(input())
+y1=float(input())
+x2=float(input())
+y2=float(input())
+x = (x1+x2)/2
+y = (y1+y2)/2
+
+print(f"Binoy's house is located at ({x},{y})")
+
+
