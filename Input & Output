@@ -1,0 +1,23 @@
+Program1:-
+print("Hello World\tHello World")
+
+Program2:-
+print("Hello World\nHello World")
+
+Program3:-
+n=int(input())
+print(n)
+
+Program4:-
+n = float(input())
+print('%.2f'%n)
+
+#Conversion of character to Ascii value
+Program5:-
+n = input()
+print(ord(n))
+
+Program6:-
+#conversion from ascii value to character
+a = int(input("Enter Ascii code: "))
+print(chr(a))
