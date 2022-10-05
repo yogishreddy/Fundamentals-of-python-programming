@@ -1,0 +1,30 @@
+Program1:-
+#Write a program to perform all the arithmetic operation including floor division by using a function
+def op(n1,n2):
+    print(n1+n2)
+    print(n1-n2)
+    print(n1*n2)
+    print(n1/n2)
+    print(n1//n2)
+    print(n1%n2)
+n1 = int(input())
+n2 = int(input())
+if n2>n1:
+    n1,n2 = n2,n1
+op(n1,n2)   
+
+Program2:-
+#Write a program to find the Square of a number using function.
+def square(i):
+    result= i * i
+    return result
+n = int(input())
+print(square(n))
+
+Program3:-
+#Write a program to find the cube of a number using function.
+def cube(i):
+    result= i*i*i
+    return result
+n = int(input())
+print(cube(n))
