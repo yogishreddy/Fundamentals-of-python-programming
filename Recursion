@@ -1,0 +1,89 @@
+Program1:-
+#Write a python program takes a number and finds the binary equivalent of a number recursively.
+l=[]
+def recbi(n):
+    if n>0:
+        rem=n%2
+        l.append(rem)
+        n=n//2
+        recbi(n)
+    return l
+n = int(input())
+result=recbi(n)
+for i in range(len(result)-1,-1,-1):
+    print(result[i],end="")
+    
+Program2:-
+#Write a Python Program to find the fibonacci series using recursion.
+def fibanacci(n,a,b):
+    if n!=0:
+        c=a+b
+        print(c,end=" ")
+        n=n-1
+        a=b
+        b=c
+        fibanacci(n,a,b)
+    
+
+n= int(input())
+a=-1
+b=1
+fibanacci(n,a,b)
+
+Program3:-
+#Write a Program to determine whether a given number is even or odd recursively
+def eo(n):
+    if n==0:
+        return 0
+    elif n==1:
+        return 1
+    else:
+        return eo(n-2)
+n = int(input())
+result = eo(n)
+if result==0:
+    print("Even!")
+else:
+    print("Odd!")
+    
+Program4:-
+#Write a Python Program to find the factorial of a number using recursion.
+def factorial(n):
+    result=1
+    if n==1:
+        return n
+    else:
+        return n*factorial(n-1)
+n = int(input())
+if n==0:
+    print(1)
+elif n<0:
+    print("Factorial doesn't exist")
+else:
+    print(factorial(n))
+        
+Program5:-
+#Write a Python Program to find the LCM of two numbers using recursion
+def lcm(n1,n2,i):
+    b=n1
+    if i%n1==0 and i%n2==0:
+        return i
+    else:
+        return lcm(n1,n2,i+1)
+n1=int(input())
+n2=int(input())
+if n1>n2:
+    i =n1
+else:
+    i=n2
+print(lcm(n1,n2,i))
+
+Program6:-
+#Write a program to convert decimal number to binary using recursive function.
+def btd(n):
+    if n>1:
+        btd(n//2)
+    print(n%2,end='')
+n = int(input())
+btd(n)
+print()
