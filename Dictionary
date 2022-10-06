@@ -1,0 +1,125 @@
+Program1:-
+#The program takes a dictionary and checks if a given key exists in a dictionary or not. Problem Solution
+1. Declare and initialize a dictionary to have some key-value pairs.{'A':1,'B':2,'C':3} 
+2. Take a key from the user and store it in a variable.
+3. Using an if statement and the in operator, check if the key is present in the dictionary using the dictionary.keys() method.
+4. If it is present, print the value of the key.
+5. If it isn’t present, display that the key isn’t present in the dictionary. 
+6. Exit.
+
+d = {
+    'A': 1,
+    'B': 2,
+    'C': 3
+}
+n =input("Enter key to check:\n")
+if n in d:
+    print("Key is present and value of the key is:")
+    print(d[n])
+else:
+    print("Key isn't present!")
+    
+Program2:-
+#The program takes two dictionaries and concatenates them into one dictionary. 
+Problem Solution 1. Declare and initialize two dictionaries with some key-value pairs d1={'A':1,'B':2} d2={'C':3}
+2. Use the update() function to add the key-value pair from the second dictionary to the first dictionary.
+3. Print the final dictionary.
+4. Exit.
+
+d1= {
+    'A': 1,
+    'B': 2
+}
+d2={
+    'C':3
+}
+d1.update(d2)
+print(f"Concatenated dictionary is:\n{d1}")
+
+Program3:-
+#The program takes a number from the user and generates a dictionary that contains numbers (between 1 and n) in the form (x,x*x). 
+Problem Solution 1. Take a number from the user and store it in a separate variable. 
+2. Declare a dictionary and using dictionary comprehension initialize it to values keeping the number between 1 to n as the key and the square of the number as their values. 
+3. Print the final dictionary. 
+4. Exit.
+
+n = int(input())
+d={}
+for i in range(1,n+1):
+    ud={
+        i: i*i
+    }
+    d.update(ud)
+print(d)
+
+Program4:-
+#The program takes a key-value pair and adds it to the dictionary. 
+Problem Solution 1. Take a key-value pair from the user and store it in separate variables.
+2. Declare a dictionary and initialize it to an empty dictionary.
+3. Use the update() function to add the key-value pair to the dictionary.
+4. Print the final dictionary. 
+5. Exit.
+
+k=int(input("Enter the key (int) to be added:"))
+v=int(input("Enter the value for the key to be added:"))
+d={}
+d.update({k:v})
+print("Updated dictionary is:")
+print(d)
+
+Program5:-
+#The program takes a dictionary and prints the sum of all the items in the dictionary. 
+Problem Solution 1. Declare and initialize a dictionary to have some key-value pairs.{'A':100,'B':540,'C':239}
+2. Find the sum of all the values in the dictionary.
+3. Print the total sum.
+4. Exit.
+
+d={
+    'A':100,
+    'B':540,
+    'C':239
+}
+sum=0
+l=d.values()
+for i in l:
+    sum=sum+int(i)
+print("Total sum of values in the dictionary:")
+print(sum)
+
+Program6:-
+#Write a Python Program to map two lists into a dictionary Declare two empty lists and initialize them to an empty list. 
+Consider a for loop to accept values for the two lists Take the number of elements in the list and store it in a variable.
+Accept the values into the list using another for loop and insert into the list. Repeat 4 and 5 for the values list also. 
+Zip the two lists and use dict() to convert it into a dictionary. 
+Print the dictionary. 
+Exit.
+
+def inp(n):
+    t=[]
+    for i in range(n):
+        t.append(int(input()))
+    return t
+def ud(n):
+    print("For keys:")
+    k=inp(n)
+    print("For values:")
+    v=inp(n)
+    d={}
+    for i in range(n):
+        d.update({k[i]:v[i]})
+    return d
+n = int(input("Enter number of elements for dictionary:"))
+result=ud(n)
+print("The dictionary is:")
+print(result)
+
+
+
+
+
+
+
+
+
+
+
