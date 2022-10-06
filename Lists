@@ -1,0 +1,95 @@
+Program1:-
+#Create a list
+n = int(input())
+a=[]
+for i in range(0,n):
+    a.append(int(input()))
+    
+print(a)
+
+Program2:-
+#Write a Python Program to find the largest number in a list
+n = int(input())
+a=[]
+for i in range(n):
+    a.append(int(input()))
+    
+print(max(a))
+
+Program3:-
+#odd or even
+n = int(input())
+l=[]
+e=[]
+o=[]
+for i in range(n):
+    l.append(int(input()))
+    if l[i]%2==0:
+        e.append(l[i])
+    else:
+        o.append(l[i])
+        
+print("The even list",e)
+print("The odd list",o)
+
+Program4:-
+#Write a program to find the mean of the elements in the array. 
+n = int(input())
+l=[]
+sum=0
+for i in range(n):
+    l.append(int(input()))
+    sum=sum+l[i]
+print(sum/n)
+
+Program5:-
+#Write a Python Program to merge two lists and sort it.
+n1 = int(input())
+l1=[]
+l2=[]
+for i in range(n1):
+    l1.append(int(input()))
+n2 = int(input())
+for j in range(n2):
+    l2.append(int(input()))
+l=l1+l2
+print("Sorted list is:",sorted(l))
+
+Program6:-
+#The program takes a lists and removes the duplicate items from the list. Problem Solution Take the number of elements in the list and store it in a variable.
+Accept the values into the list using a for loop and insert them into the list. Use a for loop to traverse through the elements of the list.
+Use an if statement to check if the element is already there in the list and if it is not there, append it to another list.
+Print the non-duplicate items of the list. Exit
+
+n = int(input())
+l=[]
+m=[]
+for i in range(0,n):
+    l.append(int(input()))
+    if l[i] not in m:
+        m.append(l[i])
+        
+print(m)
+
+Program7:-
+#Python Program to Find the Second Largest Number in a List Problem Description The program takes a list and prints the second largest number in the list.
+Problem Solution 1. Take in the number of elements and store it in a variable. 2. Take in the elements of the list one by one. 3.
+Sort the list in ascending order. 4. Print the second last element of the list. 5. Exit.
+
+n= int(input())
+l=[]
+for i in range(n):
+    l.append(int(input()))
+l  = sorted(l)
+print(l[len(l)-2])
+
+Program8:-
+#Swap the numbers of the first and last elements of a list
+n = int(input())
+l=[]
+for i in range(n):
+    l.append(int(input()))
+a= len(l)    
+l[0],l[a-1]= l[a-1],l[0]
+print(l)
+
