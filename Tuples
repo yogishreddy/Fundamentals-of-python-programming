@@ -1,0 +1,41 @@
+Program1:-
+#Write a Python program to add an item in a tuple. Problem Solution 1.create a tuple
+2.use merge of tuples with the + operator you can add an element and it will create a new tuple 
+3.add items in a specific index[:5]
+4.convert the tuple to list
+5.append the list(30)
+
+t1=(4,6,2,8,3,1)
+print(t1)
+t1=t1+(9,)
+print(t1)
+t1 = t1[:5]+(15,20,25)+t1[:5]
+print(t1)
+t1= list(t1)
+t1.append(30)
+print(tuple(t1))
+
+Program2:-
+#Write a Python program to find the length of a tuple.
+n = input()
+l=()
+for i in n:
+    l=l+tuple(i)
+print(l)
+print(len(l))
+
+Program3:-
+#Write a Python program to reverse a tuple.
+n=input()
+t=()
+for i in n[::-1]:
+    t=t+tuple(i)
+print(t)
+
+Program4:-
+#Write a python program to find the repeated items of a tuple.
+n =2,4,5,6,2,3,4,4,7
+j = int(input())
+print(n)
+print(n.count(j))
+
