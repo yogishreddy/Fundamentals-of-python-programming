@@ -1,0 +1,99 @@
+Program1:-
+#There are 50 students in the class. The teacher wants to arrange them in the height order. So help the teacher to find the smallest person and tallest 
+to arrange.(count the number of lowercase letters and uppercase letters in a string.) Problem Description The program takes a string and counts the number
+of lowercase letters and uppercase letters in the string. Problem Solution
+1. Take a string from the user and store it in a variable.
+2. Initialize the two count variables to 0. 
+3. Use a for loop to traverse through the characters in the string and increment the first count variable each time a lowercase character 
+is encountered and increment the second count variable each time a uppercase character is encountered.
+4. Print the total count of both the variables.
+5. Exit.
+
+n = input()
+l=0
+u=0
+for i in n:
+    if i>='a' and i<='z':
+        l=l+1
+    else:
+        u=u+1
+print(u)
+print(l)
+
+Program2:-
+#Write a  Python Program to calculate the number of words and characters present in a string.
+n = input()
+count=1
+c=0
+for i in n:
+    if i==" ":
+        count+=1
+        c+=1
+    else:
+        c+=1
+print(count)
+print(c)
+
+Program3:-
+#Write a Python Program to calculate the number of digits and letters in a string. Problem Description The program takes a string and calculates the
+number of digits and letters in a string. Problem Solution 
+1. Take a string from the user and store it in a variable. 
+2. Initialize the two count variables to 0. 
+3. Use a for loop to traverse through the characters in the string and increment the first count variable each time a digit is encountered 
+and increment the second count variable each time a character is encountered.
+4. Print the total count of both the variables.
+5. Exit.
+
+str = input()
+d = 0
+l =0
+for i in str:
+    if i>='a' and i<='z':
+        l+=1
+    elif i>='A' and i<='Z':
+        l+=1
+    else:
+        d+=1
+print("Characters =",l)
+print("Digits =",d)
+
+Program4:-
+#Write a python code to arrange the characters in ascending order of the given String
+str = input()
+result=''.join(sorted(str))
+print(result)
+
+Program5:-
+#Write a Python Program to form a new string made of the first 2 characters and last 2 characters from a given string. 
+Problem Description The program takes a string and forms a new string made of the first 2 characters and last 2 characters from a given string.
+Problem Solution 1. Take a string from the user and store it in a variable.
+2. Initialize a count variable to 0. 
+3. Use a for loop to traverse through the characters in the string and increment the count variable each time.
+4. Form the new string using string slicing.
+5. Print the newly formed string.
+6. Exit.
+
+str=input()
+count=0
+for i in str:
+    count=count+1
+print(str[0:2]+str[count-2:count])
+
+Program6:-
+#Write a Python Program to remove the nth index character from a non-empty string.
+n = input()
+i = int(input())
+print(n[:i]+n[i+1:])
+
+Program7:-
+#Write a Python Program to replace all occurrences of ‘a’ with ‘$’ in a string.
+str=input()
+alphabet= input()
+r =input()
+result = str.replace(alphabet,r)
+print("Modified string:")
+print(result)
+
+
+
+
